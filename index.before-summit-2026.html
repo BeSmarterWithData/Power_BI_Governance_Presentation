@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Impact IQ: Scaling Power BI Successfully Begins with Visual-Level Lineage | The Cloud &amp; AI Summit 2026</title>
+<title>ImpactIQ — Impact Analysis &amp; Governance for Power BI + Fabric</title>
 <style>
 /* ============================================================
    BRAND TOKENS — MCAPS FY26 identity
@@ -45,7 +45,7 @@
 html,body{ height:100%; }
 body{ background:#0c0e12; color:var(--brand-ink); font-family:var(--font-body); overflow:hidden; -webkit-font-smoothing:antialiased; }
 
-#viewport{ position:fixed; inset:0 0 80px; display:grid; grid-template: minmax(0,1fr) / minmax(0,1fr); place-items:center; }
+#viewport{ position:fixed; inset:0; display:grid; place-items:center; }
 #stage{ width:var(--stage-w); height:var(--stage-h); transform-origin:center center; position:relative; box-shadow:0 24px 80px rgba(0,0,0,.45); border-radius:2px; }
 
 .slide{ position:absolute; inset:0; background:var(--brand-bg); padding:var(--pad); display:none; flex-direction:column; overflow:hidden; }
@@ -220,104 +220,6 @@ ul.bullets.tight li{ font-size:19px; }
 .theme-toggle .ic-sun{ display:none; } .theme-toggle .ic-moon{ display:inline-block; }
 .theme-dark .theme-toggle .ic-sun{ display:inline-block; } .theme-dark .theme-toggle .ic-moon{ display:none; }
 @media print{ #nav,#progress,.nav-hint{ display:none; } }
-
-:root{
-  --brand-primary:#0E2A4A; --brand-secondary:#1E67C4; --brand-accent:#3BA0E8;
-  --brand-ink:#0A0E1A; --brand-bg:#F7F8FA; --brand-surface:#FFFFFF;
-  --brand-muted:#505966; --brand-line:#E6E8EC; --brand-mcaps-teal:#1E67C4;
-  --font-display:"Segoe UI",sans-serif; --font-body:"Segoe UI",sans-serif;
-  --font-mono:"Consolas",monospace; --radius:6px; --pad:64px;
-}
-.theme-dark{
-  --brand-bg:#0A0E1A; --brand-surface:#0E2A4A; --brand-ink:#FFFFFF;
-  --brand-muted:#BAC8D8; --brand-secondary:#A8D8F5; --brand-line:#35465C;
-}
-body{ background:#080B12; }
-.slide{ padding:104px var(--pad) 112px; background:var(--brand-bg) url('assets/summit-content.png') center/100% 100% no-repeat; gap:24px; }
-.theme-dark .slide{ background-image:url('assets/summit-dark.png'); }
-.slide.divider{ background:#0A0E1A url('assets/summit-title.png') center/100% 100% no-repeat; padding-bottom:112px; }
-.slide.divider::before,.panel-primary::after{ display:none; }
-.slide.divider .eyebrow{ color:#A8D8F5; }
-.slide.divider .btn-primary,.slide.divider .pill.solid{ background:#1E67C4; }
-.eyebrow,.h1,.h2,.kpi .value,.kpi .label,.callout .callout-bar,
-.grid-2x2 .card .quad-label,.timeline .phase .step{ letter-spacing:0; }
-.eyebrow{ font:600 14px/1.4 var(--font-mono); }
-.h2{ font-weight:650; font-size:38px; }
-.gradient{ background:none; color:#1E67C4; -webkit-text-fill-color:currentColor; }
-.divider .gradient,.theme-dark .gradient{ color:#A8D8F5; }
-.accent-rule{ width:64px; height:3px; border-radius:0; }
-.footer{ bottom:76px; font-size:12px; }
-.footer .brand-tag{ color:var(--brand-muted); }
-.divider .footer .brand-tag{ color:#BAC8D8; }
-.cols-2,.cols-3{ gap:32px; }
-.panel-visual{ background:rgba(255,255,255,.92); }
-.theme-dark .panel-visual .panel-cap{ color:#505966; }
-.grid-2x2,.grid-3x2{ gap:18px; }
-.grid-2x2 .card{ justify-content:center; }
-.kpi{ box-shadow:none; }
-.kpi::before{ background:var(--brand-secondary); }
-.theme-dark .kpi{ box-shadow:none; }
-.iq-banner{ border-radius:4px; box-shadow:none; }
-.slide.conference-title{ justify-content:center; gap:20px; }
-.conference-title .hero-copy{ gap:18px; max-width:1060px; }
-.conference-title .h1{ font-size:48px; line-height:1.13; font-weight:650; }
-.conference-title .h1 span{ display:block; }
-.conference-title .session-brand{ color:#A8D8F5; margin-bottom:12px; font-size:30px; }
-.conference-title .author{ font-size:21px; line-height:1.5; }
-.session-meta{ color:#A8D8F5; font:500 16px/1.5 var(--font-mono); }
-.agenda-list{ list-style:none; display:grid; gap:0; }
-.agenda-list li{ display:grid; grid-template-columns:72px 1fr; align-items:center; gap:18px; padding:17px 0; border-bottom:1px solid var(--brand-line); }
-.agenda-list time{ font:600 16px/1.3 var(--font-mono); color:var(--brand-secondary); }
-.agenda-list .h3{ font-size:21px; }
-.divider .agenda-list time{ color:#A8D8F5; }
-.divider .agenda-list li{ border-color:#35465C; }
-.card a{ color:var(--brand-secondary); text-underline-offset:3px; }
-.edition-matrix{ width:100%; border-collapse:collapse; table-layout:fixed; font:400 17px/1.35 var(--font-body); }
-.edition-matrix th,.edition-matrix td{ padding:12px 16px; border-bottom:1px solid var(--brand-line); text-align:left; vertical-align:top; }
-.edition-matrix thead th{ color:var(--brand-muted); font-size:14px; }
-.edition-matrix th:first-child{ width:24%; }
-.edition-matrix th:nth-child(2){ width:34%; }
-.edition-matrix a{ color:var(--brand-secondary); text-underline-offset:3px; }
-.edition-matrix small{ display:block; margin-top:5px; color:var(--brand-muted); font-size:14px; }
-.edition-workflow .body{ font-size:19px; }
-.slide.sponsors{ padding:0; background:#0A0E1A; }
-.sponsors img{ width:100%; height:100%; object-fit:contain; }
-#nav{ bottom:28px; gap:4px; padding:4px 8px; border-radius:6px; background:#0A0E1A; border:1px solid #35465C; }
-#nav button,#nav .theme-toggle{ box-sizing:border-box; position:relative; width:28px; height:28px; padding:0; display:grid; place-items:center; text-align:center; }
-#nav button::after{ content:attr(data-tooltip); position:absolute; top:calc(100% + 8px); left:50%; transform:translateX(-50%); white-space:nowrap; font:500 11px/16px var(--font-body); color:#FFF; background:#0A0E1A; padding:0 4px; border-radius:2px; opacity:0; pointer-events:none; }
-#nav button:hover::after,#nav button:focus-visible::after{ opacity:1; }
-#nav button:focus-visible,a:focus-visible{ outline:3px solid #3BA0E8; outline-offset:3px; }
-.nav-hint{ display:none; }
-@media(max-width:600px){
-  body{ overflow:auto; }
-  #viewport{ position:relative; display:block; padding-bottom:76px; }
-  #stage{ width:100%; height:auto; transform:none !important; box-shadow:none; }
-  .slide,.slide.divider{ position:relative; min-height:calc(100svh - 76px); padding:96px 24px 72px; overflow:visible; background-size:auto 100%; background-position:left top; }
-  .slide::after{ content:""; position:absolute; inset:0 0 auto; height:70px; background:url('assets/summit-content.png') left top/960px 540px no-repeat; pointer-events:none; }
-  .slide.divider::after,.theme-dark .slide::after{ background-image:url('assets/summit-dark.png'); }
-  .slide{ background-image:none; }
-  .slide.divider,.theme-dark .slide{ background-image:none; background-color:#0A0E1A; }
-  .conference-title .h1{ font-size:32px; }
-  .conference-title .session-brand{ font-size:26px; }
-  .h1{ font-size:32px; }
-  .h2{ font-size:28px; }
-  .body,ul.bullets li{ font-size:19px; }
-  .cols-2,.cols-3,.grid-2x2,.grid-3x2,.kpis{ grid-template-columns:1fr; grid-template-rows:auto; flex:none; }
-  .slide > .spread,.slide > div[style*="display:flex"],.timeline{ flex-direction:column; align-items:stretch !important; }
-  .timeline{ max-height:none; }
-  .timeline .phase,.timeline .phase:first-child,.timeline .phase:last-child{ clip-path:none; padding:22px; }
-  .panel-visual{ min-height:220px; }
-  .callout{ grid-template-columns:1fr; }
-  .footer{ left:24px; right:24px; bottom:28px; font-size:10px; }
-  .iq-banner{ max-width:100%; height:auto; }
-  .slide.sponsors{ padding:0; min-height:0; }
-  .slide.sponsors::after{ display:none; }
-  .edition-matrix,.edition-matrix tbody,.edition-matrix tr,.edition-matrix th,.edition-matrix td{ display:block; width:100% !important; }
-  .edition-matrix thead{ display:none; }
-  .edition-matrix tr{ padding:16px 0; border-bottom:1px solid var(--brand-line); }
-  .edition-matrix th,.edition-matrix td{ padding:6px 0; border:0; }
-  .edition-matrix td::before{ content:attr(data-label); display:block; font-weight:600; font-size:14px; color:var(--brand-muted); margin-bottom:4px; }
-}
 </style>
 </head>
 <body>
@@ -326,12 +228,23 @@ body{ background:#080B12; }
 <div id="viewport"><div id="stage">
 
   <!-- ============ 1 · HERO ============ -->
-  <section class="slide divider conference-title is-active">
-    <div class="hero-copy">
-      <span class="eyebrow">The Cloud &amp; AI Summit 2026 · Data &amp; Analytics</span>
-      <h1 class="h1"><span class="session-brand">Impact IQ: </span>Scaling Power BI Successfully<br> Begins with Visual-Level Lineage</h1>
-      <p class="session-meta">October 1, 2026 · 10:15–11:45 AM · Integrity</p>
-      <div class="author"><span><b>Chris Cusumano</b><br>Senior Data Engineer | Microsoft</span></div>
+  <section class="slide divider is-active">
+    <img class="iq-banner" width="338" height="190" src="impactiq-banner.png" alt="ImpactIQ — Impact Analysis &amp; Governance for Power BI + Fabric" style="align-self:center">
+    <div class="hero-copy" style="margin-top:26px">
+      <span class="eyebrow">Impact Analysis &amp; Governance</span>
+      <h1 class="h1" style="font-size:38px">Know what's <span class="gradient">used</span>, what will <span class="gradient">break</span> — and back it all up.</h1>
+      <p class="body">Impact analysis &amp; governance — down to the visual level.</p>
+      <div class="pills" style="margin-top:4px">
+        <span class="pill solid">👤 Any User</span>
+        <span class="pill solid">💻 Any Computer</span>
+        <span class="pill solid">📁 Any Workspace</span>
+        <span class="pill">⚡ Zero Prerequisites</span>
+        <span class="pill">🔓 Open Source</span>
+      </div>
+      <div class="author" style="margin-top:4px">
+        <span class="avatar">CC</span>
+        <span>Presented by <b>Chris Cusumano</b> · inspired by the Power BI community</span>
+      </div>
     </div>
 
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
@@ -341,25 +254,24 @@ body{ background:#080B12; }
   <section class="slide">
     <div class="stack-sm">
       <span class="eyebrow">Agenda</span>
-      <h2 class="h2">90 minutes: from lineage to confident change</h2>
+      <h2 class="h2">What we'll cover today</h2>
       <hr class="accent-rule">
     </div>
     <div class="cols-2">
       <div class="stack-sm">
-        <p class="body">Scale Power BI responsibly by understanding what depends on every model change, down to the individual visual.</p>
-        <p class="body muted">Leave with a practical approach to metadata, cross-workspace dependencies, and Dev/Test/Prod governance.</p>
+        <p class="body">From a single report to enterprise-scale governance — the story, the problem it creates, and the one-click tool that solves it.</p>
+        <p class="body muted">A live demo follows the walkthrough.</p>
         <div class="callout callout-info" style="margin-top:8px">
           <div class="callout-bar">Demo</div>
           <div class="callout-body">Visual-level impact analysis · workspace scanning · backup &amp; governance in action.</div>
         </div>
       </div>
-      <ol class="agenda-list">
-        <li><time datetime="PT15M">15 min</time><h3 class="h3">Scaling challenges &amp; the lineage gap</h3></li>
-        <li><time datetime="PT20M">20 min</time><h3 class="h3">Impact IQ capabilities &amp; editions</h3></li>
-        <li><time datetime="PT30M">30 min</time><h3 class="h3">Live demo: trace a model change</h3></li>
-        <li><time datetime="PT15M">15 min</time><h3 class="h3">Governance across Dev/Test/Prod</h3></li>
-        <li><time datetime="PT10M">10 min</time><h3 class="h3">Questions &amp; next steps</h3></li>
-      </ol>
+      <div class="stack-sm">
+        <div class="card"><div style="display:flex;align-items:center;gap:16px"><span class="num">1</span><h3 class="h3">The journey: simple → complex</h3></div></div>
+        <div class="card"><div style="display:flex;align-items:center;gap:16px"><span class="num">2</span><h3 class="h3">The challenge &amp; the gap</h3></div></div>
+        <div class="card"><div style="display:flex;align-items:center;gap:16px"><span class="num">3</span><h3 class="h3">Meet ImpactIQ — features &amp; what's new</h3></div></div>
+        <div class="card"><div style="display:flex;align-items:center;gap:16px"><span class="num">4</span><h3 class="h3">Architecture &amp; getting started</h3></div></div>
+      </div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
@@ -522,7 +434,7 @@ body{ background:#080B12; }
       <div class="stack">
         <div class="feature-row"><span class="ic">💾</span><div><div class="t">Complete backups</div><div class="d">Every report, model &amp; dataflow — automatically.</div></div></div>
         <div class="feature-row"><span class="ic">🔬</span><div><div class="t">Visual-level impact analysis</div><div class="d">Trace usage down to the individual visual.</div></div></div>
-        <div class="feature-row"><span class="ic">⚡</span><div><div class="t">Start with Impact IQ 1-Click</div><div class="d">No computer admin rights; workspace Member access required.</div></div></div>
+        <div class="feature-row"><span class="ic">⚡</span><div><div class="t">Zero prerequisites</div><div class="d">Fully automated, user-level, open source.</div></div></div>
         <div class="feature-row"><span class="ic">📊</span><div><div class="t">Explore in Power BI</div><div class="d">Final output is a familiar governance model.</div></div></div>
       </div>
       <div class="panel-primary">
@@ -541,7 +453,7 @@ body{ background:#080B12; }
   <!-- ============ 8 · FEATURE SET ============ -->
   <section class="slide">
     <div class="stack-sm">
-      <span class="eyebrow">Impact IQ 1-Click · Capabilities</span>
+      <span class="eyebrow">Capabilities</span>
       <h2 class="h2">A comprehensive feature set</h2>
       <hr class="accent-rule">
     </div>
@@ -559,7 +471,7 @@ body{ background:#080B12; }
   <!-- ============ 9 · WHAT'S NEW ============ -->
   <section class="slide">
     <div class="stack-sm">
-      <span class="eyebrow">Impact IQ 1-Click · Recently Added</span>
+      <span class="eyebrow">Recently Added</span>
       <h2 class="h2">What's <span class="gradient">new</span> in ImpactIQ</h2>
       <hr class="accent-rule">
     </div>
@@ -576,75 +488,9 @@ body{ background:#080B12; }
 
   <!-- ============ 10 · HOW IT WORKS ============ -->
   <section class="slide">
-    <div class="stack-sm">
-      <span class="eyebrow">One question across five editions</span>
-      <h2 class="h2">Before changing a measure, know its impact</h2>
-      <hr class="accent-rule">
-    </div>
-    <p class="body">Which reports, pages, and visuals depend on this measure, and who needs to review the change?</p>
-    <div class="timeline" aria-label="Trace a measure through reports and pages to individual visuals">
-      <div class="phase"><span class="step">Start here</span><span class="name">Measure</span><span class="desc">Identify the proposed model change</span></div>
-      <div class="phase"><span class="step">Find usage</span><span class="name">Report</span><span class="desc">Locate downstream dependencies</span></div>
-      <div class="phase"><span class="step">Locate impact</span><span class="name">Page</span><span class="desc">Find the affected report experience</span></div>
-      <div class="phase active"><span class="step">Validate</span><span class="name">Visual</span><span class="desc">Review what users actually see</span></div>
-    </div>
-    <p class="body muted" style="font-size:19px">The goal stays the same. Your content location, execution model, and permissions determine the edition.</p>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Choose by scope, environment, and permissions</span><span class="pageno"></span></div>
-  </section>
-
-  <section class="slide">
-    <div class="stack-sm">
-      <span class="eyebrow">Choose your edition</span>
-      <h2 class="h2">Five workflows. Five ways to get value.</h2>
-      <hr class="accent-rule">
-    </div>
-    <table class="edition-matrix" aria-label="Impact IQ editions, workflows, benefits, and requirements">
-      <thead><tr><th scope="col">Edition</th><th scope="col">Choose it when...</th><th scope="col">Benefit &amp; key requirement</th></tr></thead>
-      <tbody>
-        <tr><th scope="row"><a href="https://github.com/BeSmarterWithData/ImpactIQ" target="_blank" rel="noopener">Impact IQ 1-Click</a></th><td data-label="Choose it when...">Your BI team analyzes published workspaces.</td><td data-label="Benefit &amp; key requirement">Quick impact analysis and backups.<small>Workspace Member access; no computer admin rights. Legacy + PBIR.</small></td></tr>
-        <tr><th scope="row"><a href="https://github.com/BeSmarterWithData/ImpactIQ-Local" target="_blank" rel="noopener">Local</a></th><td data-label="Choose it when...">You develop with local PBIX/PBIT files.</td><td data-label="Benefit &amp; key requirement">Inspect dependencies before publishing.<small>No workspace access or admin rights needed. Legacy + PBIR.</small></td></tr>
-        <tr><th scope="row"><a href="https://github.com/BeSmarterWithData/ImpactIQ-ServicePrincipal" target="_blank" rel="noopener">Service Principal</a></th><td data-label="Choose it when...">Scans must run on a schedule or in CI/CD.</td><td data-label="Benefit &amp; key requirement">Repeatable, unattended execution.<small>Configure service principal authentication and permissions.</small></td></tr>
-        <tr><th scope="row"><a href="https://github.com/BeSmarterWithData/ImpactIQ-SemanticLinkLabs" target="_blank" rel="noopener">Semantic Link Labs</a></th><td data-label="Choose it when...">Your workflow belongs in Fabric.</td><td data-label="Benefit &amp; key requirement">Automate into a lakehouse with Fabric pipelines.<small>Fabric environment required. PBIR reports only.</small></td></tr>
-        <tr><th scope="row"><a href="https://github.com/BeSmarterWithData/ImpactIQ-TenantAdmin" target="_blank" rel="noopener">Tenant Admin</a></th><td data-label="Choose it when...">You need administrative oversight.</td><td data-label="Benefit &amp; key requirement">1-Click capabilities plus permissions and usage activity.<small>Admin API access and workspace permission management.</small></td></tr>
-      </tbody>
-    </table>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Match the workflow, not a product tier</span><span class="pageno"></span></div>
-  </section>
-
-  <section class="slide">
-    <div class="stack-sm">
-      <span class="eyebrow">Execution and scope</span>
-      <h2 class="h2">Hands-on investigation or recurring governance?</h2>
-      <hr class="accent-rule">
-    </div>
-    <div class="cols-3">
-      <div class="stack-sm"><span class="eyebrow">Investigate now</span><h3 class="h3">1-Click &amp; Local</h3><ul class="bullets tight"><li>1-Click: published workspace content</li><li>Local: files in development</li><li>Answer a specific change question</li></ul></div>
-      <div class="stack-sm"><span class="eyebrow">Run unattended</span><h3 class="h3">Service Principal</h3><ul class="bullets tight"><li>Service principal authentication</li><li>Scheduled tasks and CI/CD</li><li>No interactive login during execution</li></ul></div>
-      <div class="stack-sm"><span class="eyebrow">Run in Fabric</span><h3 class="h3">Semantic Link Labs</h3><ul class="bullets tight"><li>Cloud-based lakehouse output</li><li>Fabric pipeline integration</li><li>PBIR report format required</li></ul></div>
-    </div>
-    <div class="callout callout-info"><div class="callout-bar">Tenant Admin</div><div class="callout-body">A scope decision: add Admin API metadata, user permissions, usage activity, and workspace access management. Not a mandatory next tier.</div></div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Authentication and permissions vary by edition</span><span class="pageno"></span></div>
-  </section>
-
-  <section class="slide edition-workflow">
-    <div class="stack-sm">
-      <span class="eyebrow">Example team workflow</span>
-      <h2 class="h2">One organization can use several editions</h2>
-      <hr class="accent-rule">
-    </div>
-    <div class="grid-2x2">
-      <div class="card"><span class="eyebrow">Developer · Local</span><h3 class="h3">Inspect before publishing</h3><p class="body">Review local report dependencies while preparing a measure change.</p></div>
-      <div class="card"><span class="eyebrow">BI team · Impact IQ 1-Click</span><h3 class="h3">Check published impact</h3><p class="body">Investigate affected reports and visuals across accessible workspaces.</p></div>
-      <div class="card"><span class="eyebrow">Automation owner</span><h3 class="h3">Keep scans recurring</h3><p class="body">Choose Service Principal for unattended jobs, or Semantic Link Labs for a Fabric lakehouse workflow.</p></div>
-      <div class="card"><span class="eyebrow">Administrator · Tenant Admin</span><h3 class="h3">Review access and activity</h3><p class="body">Use permissions, usage activity, and tenant metadata to support oversight.</p></div>
-    </div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Complementary workflows, not a required deployment sequence</span><span class="pageno"></span></div>
-  </section>
-
-  <section class="slide">
     <div class="spread">
       <div class="stack-sm">
-        <span class="eyebrow">Impact IQ 1-Click · How It Works</span>
+        <span class="eyebrow">How It Works</span>
         <h2 class="h2">From scan to insight — automatically</h2>
         <hr class="accent-rule">
       </div>
@@ -658,43 +504,13 @@ body{ background:#080B12; }
       <div class="phase active"><span class="step">Step 5</span><span class="name">Explore</span><span class="desc">Power BI governance model</span></div>
     </div>
     <div class="callout callout-info" style="margin-top:8px">
-      <div class="callout-bar">Access matters</div>
-      <div class="callout-body">No computer admin rights required for <b>Impact IQ 1-Click</b>. Workspace Member access is required; other editions have their own authentication and environment requirements.</div>
+      <div class="callout-bar">Runs anywhere</div>
+      <div class="callout-body">Works with every capacity — <b>Pro · Premium · Premium Per User · Fabric · My Workspace</b> — with no admin rights required.</div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
 
   <!-- ============ 11 · BY THE NUMBERS ============ -->
-  <section class="slide divider">
-    <div class="stack-sm">
-      <span class="eyebrow">Impact IQ 1-Click · Live demo · 30 minutes</span>
-      <h2 class="h2">One measure changes.<br>Which visuals are affected?</h2>
-      <p class="body">Follow the dependency from semantic model to report, page, and visual.</p>
-    </div>
-    <ol class="agenda-list">
-      <li><time datetime="PT5M">5 min</time><h3 class="h3" style="color:#fff">Choose a workspace and establish a baseline</h3></li>
-      <li><time datetime="PT15M">15 min</time><h3 class="h3" style="color:#fff">Trace usage and inspect cross-workspace impact</h3></li>
-      <li><time datetime="PT10M">10 min</time><h3 class="h3" style="color:#fff">Review affected pages; connect the findings to other editions</h3></li>
-    </ol>
-    <div><a class="btn btn-accent" href="https://app.powerbi.com/view?r=eyJrIjoiNmMxYWQ2ZTItZDM4ZS00MGM1LTlhMDQtN2I1OTMwMzI0OTg2IiwidCI6ImUyY2Y4N2QyLTYxMjktNGExYS1iZTczLTEzOGQyY2Y5OGJlMiJ9" target="_blank" rel="noopener">▶ Open live demo</a></div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Visual-level lineage in practice</span><span class="pageno"></span></div>
-  </section>
-
-  <section class="slide">
-    <div class="stack-sm">
-      <span class="eyebrow">Governance discussion · 15 minutes</span>
-      <h2 class="h2">Make lineage part of Dev/Test/Prod</h2>
-      <hr class="accent-rule">
-    </div>
-    <div class="cols-3">
-      <div class="stack-sm"><span class="eyebrow">01 · Development</span><h3 class="h3">Understand the change</h3><ul class="bullets tight"><li>Capture a metadata baseline</li><li>Trace measure and field usage</li><li>Identify downstream report owners</li></ul></div>
-      <div class="stack-sm"><span class="eyebrow">02 · Test</span><h3 class="h3">Validate the impact</h3><ul class="bullets tight"><li>Review affected pages and visuals</li><li>Confirm cross-workspace dependencies</li><li>Agree on acceptance checks</li></ul></div>
-      <div class="stack-sm"><span class="eyebrow">03 · Production</span><h3 class="h3">Release with evidence</h3><ul class="bullets tight"><li>Confirm backups and rollback steps</li><li>Coordinate changes with owners</li><li>Re-scan and verify after release</li></ul></div>
-    </div>
-    <div class="callout callout-info"><div class="callout-bar">Discuss</div><div class="callout-body">Who owns the impact review today, and what evidence would make your next model change safer?</div></div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · A practical governance workflow</span><span class="pageno"></span></div>
-  </section>
-
   <section class="slide">
     <div class="stack-sm">
       <span class="eyebrow">By the Numbers</span>
@@ -704,14 +520,47 @@ body{ background:#080B12; }
     <div class="kpis">
       <div class="kpi accent"><span class="value">180+</span><span class="label">GitHub Stars</span></div>
       <div class="kpi"><span class="value">1-Click</span><span class="label">To Deploy</span></div>
-      <div class="kpi success"><span class="value">5</span><span class="label">Specialized Editions</span></div>
+      <div class="kpi success"><span class="value">0</span><span class="label">Prerequisites</span></div>
       <div class="kpi accent"><span class="value sm">Apache-2.0</span><span class="label">Open Source</span></div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
 
-  <section class="slide sponsors" aria-label="Thank you to our summit sponsors">
-    <img src="assets/summit-sponsors.png" alt="The Cloud &amp; AI Summit 2026 sponsors. Premium exhibitors: Anders, ArchitectNow, Microsoft. Exhibitors: 4sight, Covenant Technology Partners, MiTek, Oakwood, Silika, Strategy. Experience sponsor: Kepler.">
+  <!-- ============ 12 · GET RICKROLLED ============ -->
+  <section class="slide divider">
+    <div style="display:flex;align-items:center;gap:30px">
+      <img class="iq-banner" width="300" height="169" src="impactiq-banner.png" alt="ImpactIQ — Impact Analysis &amp; Governance for Power BI + Fabric" style="flex:0 0 auto">
+      <div class="stack-sm" style="max-width:600px">
+        <span class="eyebrow">Get Started</span>
+        <h2 class="h2">Ready to transform your <span class="gradient">governance?</span></h2>
+        <p class="body">Open source · community driven · enterprise ready.</p>
+      </div>
+    </div>
+    <div class="cols-2" style="margin-top:20px;align-items:center">
+      <div class="stack">
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-accent" href="https://github.com/BeSmarterWithData/ImpactIQ/releases/download/v2.0/ImpactIQ.bat" target="_blank" rel="noopener">⬇️ Download One-Click Tool</a>
+          <a class="btn btn-outline" href="https://github.com/BeSmarterWithData/ImpactIQ" target="_blank" rel="noopener">🔗 Open on GitHub</a>
+        </div>
+        <div class="stack-sm">
+          <span class="eyebrow">Pick your edition</span>
+          <div class="editions">
+            <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ" target="_blank" rel="noopener">☁️ Cloud</a>
+            <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-Local" target="_blank" rel="noopener">💻 Local</a>
+            <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-TenantAdmin" target="_blank" rel="noopener">🛡️ Tenant Admin</a>
+            <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-ServicePrincipal" target="_blank" rel="noopener">🔑 Service Principal</a>
+            <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-SemanticLinkLabs" target="_blank" rel="noopener">🧪 Semantic Link Labs</a>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:center">
+        <div class="qr">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&amp;margin=0&amp;color=091F2C&amp;data=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ" alt="QR code linking to a surprise video" loading="lazy">
+          <div class="cap">Scan to visit</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
 
   <!-- ============ 13 · GET STARTED ============ -->
@@ -733,7 +582,7 @@ body{ background:#080B12; }
         <div class="stack-sm">
           <span class="eyebrow">Pick your edition</span>
           <div class="editions">
-            <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ" target="_blank" rel="noopener">☁️ Impact IQ 1-Click</a>
+            <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ" target="_blank" rel="noopener">☁️ Cloud</a>
             <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-Local" target="_blank" rel="noopener">💻 Local</a>
             <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-TenantAdmin" target="_blank" rel="noopener">🛡️ Tenant Admin</a>
             <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-ServicePrincipal" target="_blank" rel="noopener">🔑 Service Principal</a>
@@ -751,25 +600,14 @@ body{ background:#080B12; }
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
 
-  <section class="slide divider">
-    <div class="stack">
-      <span class="eyebrow">Questions &amp; next steps · 10 minutes</span>
-      <h2 class="h1">What would you change<br>with complete impact visibility?</h2>
-      <p class="body">Start with one workspace. Trace one change.<br>Make visual-level lineage part of your release process.</p>
-      <div class="author"><span><b>Chris Cusumano</b> · Senior Data Engineer | Microsoft</span></div>
-      <div><a class="btn btn-accent" href="https://www.cloudandaisummit.com/content/sessiondetail/1172566" target="_blank" rel="noopener">Session details &amp; feedback</a></div>
-    </div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> The Cloud &amp; AI Summit 2026 · Impact IQ</span><span class="pageno"></span></div>
-  </section>
-
 </div></div>
 
 <div id="nav">
-  <button id="prev" aria-label="Previous slide" data-tooltip="Previous slide">←</button>
+  <button id="prev" aria-label="Previous slide">Prev</button>
   <span id="counter"></span>
-  <button id="next" aria-label="Next slide" data-tooltip="Next slide">→</button>
-  <button id="full" aria-label="Toggle fullscreen" data-tooltip="Fullscreen">⛶</button>
-  <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-tooltip="Theme" aria-pressed="false">
+  <button id="next" aria-label="Next slide">Next</button>
+  <button id="full" aria-label="Toggle fullscreen">Full</button>
+  <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme" aria-pressed="false">
     <svg class="ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" fill="currentColor"/></svg>
     <svg class="ic-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5.1 5.1l1.5 1.5M17.4 17.4l1.5 1.5M18.9 5.1l-1.5 1.5M6.6 17.4l-1.5 1.5"/></g></svg>
   </button>
@@ -788,13 +626,12 @@ body{ background:#080B12; }
 
   function fit(){
     const sw = stage.offsetWidth, sh = stage.offsetHeight;
-    const scale = Math.min(window.innerWidth / sw, Math.max(1, window.innerHeight - 80) / sh) * 0.98;
+    const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh) * 0.96;
     stage.style.transform = 'scale(' + scale + ')';
   }
   function show(n){
     i = Math.max(0, Math.min(slides.length - 1, n));
     slides.forEach((s, idx) => s.classList.toggle('is-active', idx === i));
-    if(window.matchMedia('(max-width:600px)').matches) window.scrollTo(0, 0);
     counter.textContent = (i + 1) + ' / ' + slides.length;
     bar.style.width = ((i + 1) / slides.length * 100) + '%';
     slides.forEach((s) => { const p = s.querySelector('.pageno'); if(p) p.textContent = (i + 1); });
