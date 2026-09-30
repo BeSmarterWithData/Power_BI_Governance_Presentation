@@ -273,7 +273,7 @@ body{ background:#080B12; }
 .divider .agenda-list li{ border-color:#35465C; }
 .card a{ color:var(--brand-secondary); text-underline-offset:3px; }
 .edition-matrix{ width:100%; border-collapse:collapse; table-layout:fixed; font:400 17px/1.35 var(--font-body); }
-.edition-matrix th,.edition-matrix td{ padding:12px 16px; border-bottom:1px solid var(--brand-line); text-align:left; vertical-align:top; }
+.edition-matrix th,.edition-matrix td{ padding:10px 16px; border-bottom:1px solid var(--brand-line); text-align:left; vertical-align:top; }
 .edition-matrix thead th{ color:var(--brand-muted); font-size:14px; }
 .edition-matrix th:first-child{ width:24%; }
 .edition-matrix th:nth-child(2){ width:34%; }
@@ -341,13 +341,13 @@ body{ background:#080B12; }
   <section class="slide">
     <div class="stack-sm">
       <span class="eyebrow">Agenda</span>
-      <h2 class="h2">90 minutes: from lineage to confident change</h2>
+      <h2 class="h2">90 minutes: from shared-model risk to insight</h2>
       <hr class="accent-rule">
     </div>
     <div class="cols-2">
       <div class="stack-sm">
         <p class="body">Scale Power BI responsibly by understanding what depends on every model change, down to the individual visual.</p>
-        <p class="body muted">Leave with a practical approach to metadata, cross-workspace dependencies, and Dev/Test/Prod governance.</p>
+        <p class="body muted">Explore a free, open-source solution for lineage and broader governance, with editions for different environments.</p>
         <div class="callout callout-info" style="margin-top:8px">
           <div class="callout-bar">Demo</div>
           <div class="callout-body">Visual-level impact analysis · workspace scanning · backup &amp; governance in action.</div>
@@ -355,9 +355,10 @@ body{ background:#080B12; }
       </div>
       <ol class="agenda-list">
         <li><time datetime="PT15M">15 min</time><h3 class="h3">Scaling challenges &amp; the lineage gap</h3></li>
-        <li><time datetime="PT20M">20 min</time><h3 class="h3">Impact IQ capabilities &amp; editions</h3></li>
-        <li><time datetime="PT30M">30 min</time><h3 class="h3">Live demo: trace a model change</h3></li>
-        <li><time datetime="PT15M">15 min</time><h3 class="h3">Governance across Dev/Test/Prod</h3></li>
+        <li><time datetime="PT10M">10 min</time><h3 class="h3">Impact IQ: lineage and much more</h3></li>
+        <li><time datetime="PT15M">15 min</time><h3 class="h3">Put the insights into practice</h3></li>
+        <li><time datetime="PT10M">10 min</time><h3 class="h3">Five editions, one familiar output</h3></li>
+        <li><time datetime="PT30M">30 min</time><h3 class="h3">Live demo: explore the capabilities</h3></li>
         <li><time datetime="PT10M">10 min</time><h3 class="h3">Questions &amp; next steps</h3></li>
       </ol>
     </div>
@@ -377,7 +378,7 @@ body{ background:#080B12; }
         <ul class="bullets">
           <li>Easy to maintain</li>
           <li>Easy to update</li>
-          <li>No downstream impact</li>
+          <li>Dependencies are easy to see</li>
         </ul>
       </div>
       <div class="panel-visual">
@@ -391,7 +392,7 @@ body{ background:#080B12; }
           <text x="425" y="99" text-anchor="middle" fill="#fff" font-size="16" font-weight="700" font-family="Segoe UI">📈 Report</text>
           <text x="425" y="118" text-anchor="middle" fill="#d6f2ec" font-size="12">Full control</text>
         </svg>
-        <div class="panel-cap">A tidy 1:1 relationship — zero risk when you change something.</div>
+        <div class="panel-cap">A simple dependency: one report to review when the model changes.</div>
       </div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
@@ -445,23 +446,79 @@ body{ background:#080B12; }
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
 
+  <section class="slide">
+    <div class="stack-sm">
+      <span class="eyebrow">Why It Works</span>
+      <h2 class="h2">One trusted model. Benefits everywhere.</h2>
+      <hr class="accent-rule">
+    </div>
+    <div class="grid-3x2">
+      <div class="card stack-sm">
+        <h3 class="h3">Consistent business definitions</h3>
+        <p class="body">Shared measures and KPIs keep teams aligned on what the numbers mean.</p>
+      </div>
+      <div class="card stack-sm">
+        <h3 class="h3">Faster report delivery</h3>
+        <p class="body">Build reports on trusted data and relationships instead of rebuilding the model.</p>
+      </div>
+      <div class="card stack-sm">
+        <h3 class="h3">Less duplicated work</h3>
+        <p class="body">Reuse transformations and calculations; maintain shared logic in one place.</p>
+      </div>
+      <div class="card stack-sm">
+        <h3 class="h3">Centralized governance</h3>
+        <p class="body">Manage model ownership, access, and security rules consistently for report consumers.</p>
+      </div>
+      <div class="card stack-sm">
+        <h3 class="h3">More efficient operations</h3>
+        <p class="body">Reduce duplicate imported models and refresh pipelines. Tune the shared model once.</p>
+      </div>
+      <div class="card stack-sm">
+        <h3 class="h3">Self-service with confidence</h3>
+        <p class="body">Let teams explore and create their own reports on a governed foundation.</p>
+      </div>
+    </div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Reuse delivers value across teams</span><span class="pageno"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="stack-sm">
+      <span class="eyebrow">The Core Tradeoff</span>
+      <h2 class="h2">Every report is connected: a strength and a risk</h2>
+      <hr class="accent-rule">
+    </div>
+    <div class="cols-2">
+      <div class="stack-sm">
+        <h3 class="h3">The benefit</h3>
+        <p class="body">Improve one shared model and every dependent report can benefit.</p>
+        <p class="body muted">One fix. One definition. Reused across teams.</p>
+      </div>
+      <div class="stack-sm">
+        <h3 class="h3">The risk</h3>
+        <p class="body">A breaking change in that same model can affect reports you do not own or even know about.</p>
+        <p class="body muted">More reuse means more dependencies to understand.</p>
+      </div>
+    </div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Keep the reuse. Understand the impact.</span><span class="pageno"></span></div>
+  </section>
+
   <!-- ============ 5 · WHEN IT BREAKS ============ -->
   <section class="slide">
     <div class="stack-sm">
       <span class="eyebrow">The Hidden Risk</span>
-      <h2 class="h2">But then it gets complicated…</h2>
+      <h2 class="h2">One small change. Many broken reports.</h2>
       <hr class="accent-rule">
     </div>
     <div class="cols-2">
       <div class="stack-sm">
         <ul class="bullets tight">
-          <li>Change a measure → <b>broken visual</b></li>
-          <li>Rename a column → <b>bookmarks fail</b></li>
-          <li>Delete a table → <b>pages crash</b></li>
+          <li>Change a calculation → <b>unexpected results</b></li>
+          <li>Remove a referenced field → <b>broken visual</b></li>
+          <li>Delete a used table → <b>multiple dependencies fail</b></li>
         </ul>
         <div class="callout callout-danger">
           <div class="callout-bar">Reality</div>
-          <div class="callout-body">One small update can silently break dozens of visuals across multiple workspaces — and you won't know until users complain.</div>
+          <div class="callout-body">A change can break visuals or alter their meaning across workspaces. A chart that still renders can still tell the wrong story.</div>
         </div>
       </div>
       <div class="panel-visual">
@@ -488,10 +545,39 @@ body{ background:#080B12; }
           <rect x="168" y="106" width="104" height="38" rx="10" fill="#FFB900"/>
           <text x="220" y="130" text-anchor="middle" fill="#3a2f00" font-size="13" font-weight="700" font-family="Segoe UI">1 change</text>
         </svg>
-        <div class="panel-cap">~20 reports · ~250 pages — all from a single edit.</div>
+        <div class="panel-cap">Illustrative impact: one shared object, many dependent reports.</div>
       </div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="stack-sm">
+      <span class="eyebrow">From Risk to Informed Decisions</span>
+      <h2 class="h2">How do we manage this risk?</h2>
+      <hr class="accent-rule">
+      <p class="body muted">When structural model changes require report updates, the business needs to know where the affected measures and columns are used.</p>
+    </div>
+    <div class="cols-2">
+      <div class="stack-sm">
+        <h3 class="h3">Know where it is used</h3>
+        <p class="body">Trace the model's measures and columns to dependent reports, pages, and visuals across workspaces.</p>
+        <p class="body muted">Include indirect usage through other measures.</p>
+      </div>
+      <div class="stack-sm">
+        <h3 class="h3">Make the right business decision</h3>
+        <ul class="bullets tight">
+          <li>Decide whether the change is worth the impact</li>
+          <li>Coordinate required updates with report owners</li>
+          <li>Validate affected visuals before release</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout callout-info">
+      <div class="callout-bar">Visual-level lineage</div>
+      <div class="callout-body">Know what a change could affect before deciding how to make it.</div>
+    </div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · From model dependencies to visual impact</span><span class="pageno"></span></div>
   </section>
 
   <!-- ============ 6 · EXISTING TOOLS ============ -->
@@ -500,13 +586,13 @@ body{ background:#080B12; }
       <span class="eyebrow">The Gap</span>
       <h2 class="h2">Existing tools fall short</h2>
       <hr class="accent-rule">
-      <p class="body muted">No solution reached the individual visual level — across every workspace.</p>
+      <p class="body muted">Knowing which report connects to a model does not tell us which visuals use a particular field.</p>
     </div>
     <div class="grid-2x2">
-      <div class="card"><span class="quad-label">Misses</span><h3 class="h3">Purview</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">No visual-level tracking of dependencies.</p></div>
-      <div class="card"><span class="quad-label">Misses</span><h3 class="h3">Power BI Service UI</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Limited impact visibility across workspaces.</p></div>
-      <div class="card"><span class="quad-label">Misses</span><h3 class="h3">Manual checks</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Time-consuming, tedious and error-prone.</p></div>
-      <div class="card"><span class="quad-label">Misses</span><h3 class="h3">Other tools</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Don't reach into individual visual objects.</p></div>
+      <div class="card"><span class="quad-label">Useful, but not enough</span><h3 class="h3">Catalogs &amp; inventories</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Finding an asset is different from finding every visual that uses a field.</p></div>
+      <div class="card"><span class="quad-label">Useful, but not enough</span><h3 class="h3">Report-level lineage</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">A model-to-report link does not identify the affected page or visual.</p></div>
+      <div class="card"><span class="quad-label">Difficult to repeat</span><h3 class="h3">Manual checks</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Opening reports one by one is slow, and indirect usage is easy to miss.</p></div>
+      <div class="card"><span class="quad-label">The missing connection</span><h3 class="h3">A visual-level usage map</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Connect model objects to the visuals that consume them across workspaces.</p></div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
@@ -514,25 +600,22 @@ body{ background:#080B12; }
   <!-- ============ 7 · MEET IMPACTIQ ============ -->
   <section class="slide">
     <div class="stack-sm">
-      <span class="eyebrow">The Solution</span>
-      <h2 class="h2">Meet <span class="gradient">ImpactIQ</span></h2>
+      <span class="eyebrow">A Free, Open-Source Solution</span>
+      <h2 class="h2">Meet <span class="gradient">Impact IQ</span>: free and open source</h2>
       <hr class="accent-rule">
     </div>
     <div class="cols-2">
       <div class="stack">
-        <div class="feature-row"><span class="ic">💾</span><div><div class="t">Complete backups</div><div class="d">Every report, model &amp; dataflow — automatically.</div></div></div>
         <div class="feature-row"><span class="ic">🔬</span><div><div class="t">Visual-level impact analysis</div><div class="d">Trace usage down to the individual visual.</div></div></div>
-        <div class="feature-row"><span class="ic">⚡</span><div><div class="t">Start with Impact IQ 1-Click</div><div class="d">No computer admin rights; workspace Member access required.</div></div></div>
+        <div class="feature-row"><span class="ic">🔀</span><div><div class="t">Direct &amp; indirect dependencies</div><div class="d">Follow model objects through the measures and reports that use them.</div></div></div>
         <div class="feature-row"><span class="ic">📊</span><div><div class="t">Explore in Power BI</div><div class="d">Final output is a familiar governance model.</div></div></div>
+        <div class="feature-row"><span class="ic">💾</span><div><div class="t">Supporting metadata &amp; backups</div><div class="d">Use collected artifacts to support review and recovery planning.</div></div></div>
       </div>
       <div class="panel-primary">
-        <span class="eyebrow">One-Click Deploy</span>
-        <h3 class="h3">Update &amp; Run Tool</h3>
-        <p class="body">Pulls the latest version from GitHub, drops it into <code>C:\Power BI Backups</code>, runs the script, and opens the governance model. Always up to date.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:4px">
-          <a class="btn btn-accent" href="https://github.com/BeSmarterWithData/ImpactIQ/releases/download/v2.0/ImpactIQ.bat" target="_blank" rel="noopener">⬇️ Download tool</a>
-          <a class="btn btn-outline" href="https://github.com/BeSmarterWithData/ImpactIQ" target="_blank" rel="noopener">Manual setup</a>
-        </div>
+        <span class="eyebrow">Free to Use · Open to Inspect</span>
+        <h3 class="h3">A big problem does not require a paid tool</h3>
+        <p class="body">Impact IQ connects model objects to the visuals that use them, with metadata and backups to support broader governance.</p>
+        <p class="body">Five editions bring that visibility to different workflows. Platform licenses, permissions, and setup still apply.</p>
       </div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
@@ -541,35 +624,35 @@ body{ background:#080B12; }
   <!-- ============ 8 · FEATURE SET ============ -->
   <section class="slide">
     <div class="stack-sm">
-      <span class="eyebrow">Impact IQ 1-Click · Capabilities</span>
-      <h2 class="h2">A comprehensive feature set</h2>
+      <span class="eyebrow">Answering the Lineage Question</span>
+      <h2 class="h2">From a model object to the visual that uses it</h2>
       <hr class="accent-rule">
     </div>
-    <div class="grid-3x2">
-      <div class="card"><div class="ic">🔬</div><h3 class="h3">Visual Impact Analysis</h3><p class="body">Trace measures, fields &amp; tables to the exact visuals that use them.</p></div>
-      <div class="card"><div class="ic">♻️</div><h3 class="h3">Used &amp; Unused Objects</h3><p class="body">See what's active — and what can be safely removed.</p></div>
-      <div class="card"><div class="ic">🗺️</div><h3 class="h3">Environment Overview</h3><p class="body">Full breakdown of models, reports &amp; dataflows via REST API.</p></div>
-      <div class="card"><div class="ic">💾</div><h3 class="h3">Model · Report · Dataflow Backups</h3><p class="body">XMLA, Tabular Editor &amp; pbi-tools across every capacity.</p></div>
-      <div class="card"><div class="ic">🔀</div><h3 class="h3">Refresh History &amp; Lineage</h3><p class="body">Refresh tracking plus full parent/dependent measure chains.</p></div>
-      <div class="card"><div class="ic">🏛️</div><h3 class="h3">Governance Model</h3><p class="body">Everything unified in one explorable Power BI model.</p></div>
+    <p class="body">Trace direct and indirect usage across the content you scan.</p>
+    <div class="timeline" aria-label="Trace a model object through dependent measures and reports to visuals">
+      <div class="phase"><span class="step">Start here</span><span class="name">Model object</span><span class="desc">Select a measure or column</span></div>
+      <div class="phase"><span class="step">Follow logic</span><span class="name">Dependencies</span><span class="desc">Find measures that use it</span></div>
+      <div class="phase"><span class="step">Locate usage</span><span class="name">Report &amp; page</span><span class="desc">Find usage across workspaces</span></div>
+      <div class="phase active"><span class="step">See the impact</span><span class="name">Visual</span><span class="desc">Identify what needs review</span></div>
     </div>
+    <div class="callout callout-info"><div class="callout-bar">The difference</div><div class="callout-body">Not just which report connects to a model, but which visuals depend on the object you plan to change.</div></div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
 
   <!-- ============ 9 · WHAT'S NEW ============ -->
   <section class="slide">
     <div class="stack-sm">
-      <span class="eyebrow">Impact IQ 1-Click · Recently Added</span>
-      <h2 class="h2">What's <span class="gradient">new</span> in ImpactIQ</h2>
+      <span class="eyebrow">Impact IQ 1-Click · Beyond the Original Problem</span>
+      <h2 class="h2">It starts with lineage. It does much more.</h2>
       <hr class="accent-rule">
     </div>
     <div class="grid-3x2">
-      <div class="card"><div class="ic">🎛️</div><h3 class="h3">Workspace Selector</h3><p class="body">Choose exactly which workspaces to run against — or all.</p></div>
-      <div class="card"><div class="ic">🎯</div><h3 class="h3">Specific Models &amp; Reports</h3><p class="body">Target individual items; connected assets come along.</p></div>
-      <div class="card"><div class="ic">🌐</div><h3 class="h3">Sovereign Cloud Support</h3><p class="body">Public, Germany, USGov, China, USGovHigh &amp; USGovMil.</p></div>
-      <div class="card"><div class="ic">🚨</div><h3 class="h3">Broken Visuals + Page Links</h3><p class="body">Jump straight to the impacted report page.</p></div>
-      <div class="card"><div class="ic">🧮</div><h3 class="h3">Report-Level Measures</h3><p class="body">Surface report-only measures with full DAX &amp; usage.</p></div>
-      <div class="card"><div class="ic">🖼️</div><h3 class="h3">Wireframe Layouts</h3><p class="body">See exactly where each visual sits on the page.</p></div>
+      <div class="card"><div class="ic">💾</div><h3 class="h3">Backups</h3><p class="body">Collect supported model, report, and dataflow artifacts for review and recovery planning.</p></div>
+      <div class="card"><div class="ic">♻️</div><h3 class="h3">Used &amp; unused objects</h3><p class="body">Find cleanup candidates. Validate scan coverage before deciding to remove anything.</p></div>
+      <div class="card"><div class="ic">🗺️</div><h3 class="h3">Environment inventory</h3><p class="body">Explore collected workspace, model, report, and dataflow metadata in Power BI.</p></div>
+      <div class="card"><div class="ic">🚨</div><h3 class="h3">Broken visual investigation</h3><p class="body">Use detected issues and report-page links to focus troubleshooting.</p></div>
+      <div class="card"><div class="ic">🧮</div><h3 class="h3">Deeper report context</h3><p class="body">Inspect report-level measures, DAX, and wireframe layouts to understand usage.</p></div>
+      <div class="card"><div class="ic">🔀</div><h3 class="h3">Operational context</h3><p class="body">Bring refresh history and model dependencies into the governance conversation.</p></div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
@@ -577,107 +660,35 @@ body{ background:#080B12; }
   <!-- ============ 10 · HOW IT WORKS ============ -->
   <section class="slide">
     <div class="stack-sm">
-      <span class="eyebrow">One question across five editions</span>
-      <h2 class="h2">Before changing a measure, know its impact</h2>
+      <span class="eyebrow">Impact IQ 1-Click · How It Works</span>
+      <h2 class="h2">From scan to an explorable governance model</h2>
       <hr class="accent-rule">
     </div>
-    <p class="body">Which reports, pages, and visuals depend on this measure, and who needs to review the change?</p>
-    <div class="timeline" aria-label="Trace a measure through reports and pages to individual visuals">
-      <div class="phase"><span class="step">Start here</span><span class="name">Measure</span><span class="desc">Identify the proposed model change</span></div>
-      <div class="phase"><span class="step">Find usage</span><span class="name">Report</span><span class="desc">Locate downstream dependencies</span></div>
-      <div class="phase"><span class="step">Locate impact</span><span class="name">Page</span><span class="desc">Find the affected report experience</span></div>
-      <div class="phase active"><span class="step">Validate</span><span class="name">Visual</span><span class="desc">Review what users actually see</span></div>
+    <p class="body">Select your scope. Collect metadata. Explore the results.</p>
+    <div class="timeline">
+      <div class="phase"><span class="step">Step 1</span><span class="name">Connect</span><span class="desc">Authenticate and collect metadata</span></div>
+      <div class="phase"><span class="step">Step 2</span><span class="name">Back up</span><span class="desc">Collect supported artifacts</span></div>
+      <div class="phase"><span class="step">Step 3</span><span class="name">Extract</span><span class="desc">Read model and report definitions</span></div>
+      <div class="phase"><span class="step">Step 4</span><span class="name">Analyze</span><span class="desc">Connect usage and dependencies</span></div>
+      <div class="phase active"><span class="step">Step 5</span><span class="name">Explore</span><span class="desc">Use the governance model</span></div>
     </div>
-    <p class="body muted" style="font-size:19px">The goal stays the same. Your content location, execution model, and permissions determine the edition.</p>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Choose by scope, environment, and permissions</span><span class="pageno"></span></div>
+    <div class="callout callout-info"><div class="callout-bar">1-Click access</div><div class="callout-body">Workspace Member access; no computer admin rights. Coverage depends on scope, access, and supported content.</div></div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Collection and analysis, not automatic report repair</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
     <div class="stack-sm">
-      <span class="eyebrow">Choose your edition</span>
-      <h2 class="h2">Five workflows. Five ways to get value.</h2>
-      <hr class="accent-rule">
-    </div>
-    <table class="edition-matrix" aria-label="Impact IQ editions, workflows, benefits, and requirements">
-      <thead><tr><th scope="col">Edition</th><th scope="col">Choose it when...</th><th scope="col">Benefit &amp; key requirement</th></tr></thead>
-      <tbody>
-        <tr><th scope="row"><a href="https://github.com/BeSmarterWithData/ImpactIQ" target="_blank" rel="noopener">Impact IQ 1-Click</a></th><td data-label="Choose it when...">Your BI team analyzes published workspaces.</td><td data-label="Benefit &amp; key requirement">Quick impact analysis and backups.<small>Workspace Member access; no computer admin rights. Legacy + PBIR.</small></td></tr>
-        <tr><th scope="row"><a href="https://github.com/BeSmarterWithData/ImpactIQ-Local" target="_blank" rel="noopener">Local</a></th><td data-label="Choose it when...">You develop with local PBIX/PBIT files.</td><td data-label="Benefit &amp; key requirement">Inspect dependencies before publishing.<small>No workspace access or admin rights needed. Legacy + PBIR.</small></td></tr>
-        <tr><th scope="row"><a href="https://github.com/BeSmarterWithData/ImpactIQ-ServicePrincipal" target="_blank" rel="noopener">Service Principal</a></th><td data-label="Choose it when...">Scans must run on a schedule or in CI/CD.</td><td data-label="Benefit &amp; key requirement">Repeatable, unattended execution.<small>Configure service principal authentication and permissions.</small></td></tr>
-        <tr><th scope="row"><a href="https://github.com/BeSmarterWithData/ImpactIQ-SemanticLinkLabs" target="_blank" rel="noopener">Semantic Link Labs</a></th><td data-label="Choose it when...">Your workflow belongs in Fabric.</td><td data-label="Benefit &amp; key requirement">Automate into a lakehouse with Fabric pipelines.<small>Fabric environment required. PBIR reports only.</small></td></tr>
-        <tr><th scope="row"><a href="https://github.com/BeSmarterWithData/ImpactIQ-TenantAdmin" target="_blank" rel="noopener">Tenant Admin</a></th><td data-label="Choose it when...">You need administrative oversight.</td><td data-label="Benefit &amp; key requirement">1-Click capabilities plus permissions and usage activity.<small>Admin API access and workspace permission management.</small></td></tr>
-      </tbody>
-    </table>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Match the workflow, not a product tier</span><span class="pageno"></span></div>
-  </section>
-
-  <section class="slide">
-    <div class="stack-sm">
-      <span class="eyebrow">Execution and scope</span>
-      <h2 class="h2">Hands-on investigation or recurring governance?</h2>
-      <hr class="accent-rule">
-    </div>
-    <div class="cols-3">
-      <div class="stack-sm"><span class="eyebrow">Investigate now</span><h3 class="h3">1-Click &amp; Local</h3><ul class="bullets tight"><li>1-Click: published workspace content</li><li>Local: files in development</li><li>Answer a specific change question</li></ul></div>
-      <div class="stack-sm"><span class="eyebrow">Run unattended</span><h3 class="h3">Service Principal</h3><ul class="bullets tight"><li>Service principal authentication</li><li>Scheduled tasks and CI/CD</li><li>No interactive login during execution</li></ul></div>
-      <div class="stack-sm"><span class="eyebrow">Run in Fabric</span><h3 class="h3">Semantic Link Labs</h3><ul class="bullets tight"><li>Cloud-based lakehouse output</li><li>Fabric pipeline integration</li><li>PBIR report format required</li></ul></div>
-    </div>
-    <div class="callout callout-info"><div class="callout-bar">Tenant Admin</div><div class="callout-body">A scope decision: add Admin API metadata, user permissions, usage activity, and workspace access management. Not a mandatory next tier.</div></div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Authentication and permissions vary by edition</span><span class="pageno"></span></div>
-  </section>
-
-  <section class="slide edition-workflow">
-    <div class="stack-sm">
-      <span class="eyebrow">Example team workflow</span>
-      <h2 class="h2">One organization can use several editions</h2>
+      <span class="eyebrow">Put the Visibility to Work</span>
+      <h2 class="h2">One toolkit. More than one business benefit.</h2>
       <hr class="accent-rule">
     </div>
     <div class="grid-2x2">
-      <div class="card"><span class="eyebrow">Developer · Local</span><h3 class="h3">Inspect before publishing</h3><p class="body">Review local report dependencies while preparing a measure change.</p></div>
-      <div class="card"><span class="eyebrow">BI team · Impact IQ 1-Click</span><h3 class="h3">Check published impact</h3><p class="body">Investigate affected reports and visuals across accessible workspaces.</p></div>
-      <div class="card"><span class="eyebrow">Automation owner</span><h3 class="h3">Keep scans recurring</h3><p class="body">Choose Service Principal for unattended jobs, or Semantic Link Labs for a Fabric lakehouse workflow.</p></div>
-      <div class="card"><span class="eyebrow">Administrator · Tenant Admin</span><h3 class="h3">Review access and activity</h3><p class="body">Use permissions, usage activity, and tenant metadata to support oversight.</p></div>
+      <div class="card"><h3 class="h3">Change with evidence</h3><p class="body" style="font-size:19px">Identify affected reports and coordinate review before changing shared logic.</p></div>
+      <div class="card"><h3 class="h3">Focus cleanup effort</h3><p class="body" style="font-size:19px">Investigate objects with no detected usage; confirm coverage and business needs before removal.</p></div>
+      <div class="card"><h3 class="h3">Investigate problems</h3><p class="body" style="font-size:19px">Use visual context, dependencies, and refresh history to narrow the investigation.</p></div>
+      <div class="card"><h3 class="h3">Build shared understanding</h3><p class="body" style="font-size:19px">Use inventory, backups, and edition-specific access metadata to support governance and handovers.</p></div>
     </div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Complementary workflows, not a required deployment sequence</span><span class="pageno"></span></div>
-  </section>
-
-  <section class="slide">
-    <div class="spread">
-      <div class="stack-sm">
-        <span class="eyebrow">Impact IQ 1-Click · How It Works</span>
-        <h2 class="h2">From scan to insight — automatically</h2>
-        <hr class="accent-rule">
-      </div>
-      <a class="btn btn-accent" href="https://app.powerbi.com/view?r=eyJrIjoiNmMxYWQ2ZTItZDM4ZS00MGM1LTlhMDQtN2I1OTMwMzI0OTg2IiwidCI6ImUyY2Y4N2QyLTYxMjktNGExYS1iZTczLTEzOGQyY2Y5OGJlMiJ9" target="_blank" rel="noopener">▶ View live demo</a>
-    </div>
-    <div class="timeline">
-      <div class="phase"><span class="step">Step 1</span><span class="name">Connect</span><span class="desc">Power BI REST API — auth &amp; metadata</span></div>
-      <div class="phase"><span class="step">Step 2</span><span class="name">Back Up</span><span class="desc">Models, reports &amp; dataflows</span></div>
-      <div class="phase"><span class="step">Step 3</span><span class="name">Extract</span><span class="desc">Tabular Editor 2 &amp; pbi-tools</span></div>
-      <div class="phase"><span class="step">Step 4</span><span class="name">Analyze</span><span class="desc">Visual-level impact &amp; lineage</span></div>
-      <div class="phase active"><span class="step">Step 5</span><span class="name">Explore</span><span class="desc">Power BI governance model</span></div>
-    </div>
-    <div class="callout callout-info" style="margin-top:8px">
-      <div class="callout-bar">Access matters</div>
-      <div class="callout-body">No computer admin rights required for <b>Impact IQ 1-Click</b>. Workspace Member access is required; other editions have their own authentication and environment requirements.</div>
-    </div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
-  </section>
-
-  <!-- ============ 11 · BY THE NUMBERS ============ -->
-  <section class="slide divider">
-    <div class="stack-sm">
-      <span class="eyebrow">Impact IQ 1-Click · Live demo · 30 minutes</span>
-      <h2 class="h2">One measure changes.<br>Which visuals are affected?</h2>
-      <p class="body">Follow the dependency from semantic model to report, page, and visual.</p>
-    </div>
-    <ol class="agenda-list">
-      <li><time datetime="PT5M">5 min</time><h3 class="h3" style="color:#fff">Choose a workspace and establish a baseline</h3></li>
-      <li><time datetime="PT15M">15 min</time><h3 class="h3" style="color:#fff">Trace usage and inspect cross-workspace impact</h3></li>
-      <li><time datetime="PT10M">10 min</time><h3 class="h3" style="color:#fff">Review affected pages; connect the findings to other editions</h3></li>
-    </ol>
-    <div><a class="btn btn-accent" href="https://app.powerbi.com/view?r=eyJrIjoiNmMxYWQ2ZTItZDM4ZS00MGM1LTlhMDQtN2I1OTMwMzI0OTg2IiwidCI6ImUyY2Y4N2QyLTYxMjktNGExYS1iZTczLTEzOGQyY2Y5OGJlMiJ9" target="_blank" rel="noopener">▶ Open live demo</a></div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Visual-level lineage in practice</span><span class="pageno"></span></div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Capabilities vary by edition and scan scope</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
@@ -697,31 +708,198 @@ body{ background:#080B12; }
 
   <section class="slide">
     <div class="stack-sm">
-      <span class="eyebrow">By the Numbers</span>
-      <h2 class="h2">Loved by the Power BI community</h2>
+      <span class="eyebrow">Open Source, Practical Adoption</span>
+      <h2 class="h2">Free to use. Open to inspect and adapt.</h2>
       <hr class="accent-rule">
     </div>
-    <div class="kpis">
-      <div class="kpi accent"><span class="value">180+</span><span class="label">GitHub Stars</span></div>
-      <div class="kpi"><span class="value">1-Click</span><span class="label">To Deploy</span></div>
-      <div class="kpi success"><span class="value">5</span><span class="label">Specialized Editions</span></div>
-      <div class="kpi accent"><span class="value sm">Apache-2.0</span><span class="label">Open Source</span></div>
+    <div class="cols-2">
+      <div class="stack-sm">
+        <h3 class="h3">The tool is available to you</h3>
+        <ul class="bullets tight">
+          <li>No Impact IQ license fee</li>
+          <li>Source code available on GitHub</li>
+          <li>Inspect, adapt, and contribute under the repository license</li>
+        </ul>
+      </div>
+      <div class="stack-sm">
+        <h3 class="h3">Choose a supported starting point</h3>
+        <ul class="bullets tight">
+          <li>Local files or published workspaces</li>
+          <li>Interactive, unattended, or Fabric workflows</li>
+          <li>Start small, validate results, then expand</li>
+        </ul>
+      </div>
     </div>
+    <div class="callout callout-info"><div class="callout-bar">Free tool, real prerequisites</div><div class="callout-body">Power BI or Fabric licenses, capacity costs, access permissions, and edition-specific setup still apply.</div></div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
 
-  <section class="slide sponsors" aria-label="Thank you to our summit sponsors">
-    <img src="assets/summit-sponsors.png" alt="The Cloud &amp; AI Summit 2026 sponsors. Premium exhibitors: Anders, ArchitectNow, Microsoft. Exhibitors: 4sight, Covenant Technology Partners, MiTek, Oakwood, Silika, Strategy. Experience sponsor: Kepler.">
+  <section class="slide">
+    <div class="stack-sm">
+      <span class="eyebrow">Edition 1 of 5 · Published Workspaces</span>
+      <h2 class="h2">Impact IQ 1-Click: investigate on demand</h2>
+      <hr class="accent-rule">
+    </div>
+    <div class="cols-2">
+      <div class="stack-sm">
+        <h3 class="h3">Why it has a place</h3>
+        <p class="body">A BI team needs answers about reports already published in Power BI, without first building an automation platform.</p>
+        <p class="body muted">Visual lineage, governance metadata, and supported backups in one run.</p>
+      </div>
+      <div class="stack-sm">
+        <h3 class="h3">Automatic updates</h3>
+        <p class="body">1-Click pulls the latest code when you run it, keeping you current as the tool evolves.</p>
+        <p class="body muted">The other editions require a manual pull of the latest repository code.</p>
+      </div>
+    </div>
+    <div class="callout callout-info"><div class="callout-bar">Requirements</div><div class="callout-body">Workspace Member access; no computer admin rights. Supports legacy and PBIR reports.</div></div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Start with the published content you can access</span><span class="pageno"></span></div>
   </section>
 
-  <!-- ============ 13 · GET STARTED ============ -->
+  <section class="slide">
+    <div class="stack-sm">
+      <span class="eyebrow">Edition 2 of 5 · Local Files Only</span>
+      <h2 class="h2">Impact IQ Local: inspect before publishing</h2>
+      <hr class="accent-rule">
+    </div>
+    <div class="cols-2">
+      <div class="stack-sm">
+        <h3 class="h3">Why it has a place</h3>
+        <p class="body">A developer has PBIX or PBIT files and needs to understand dependencies without connecting to a published workspace.</p>
+        <p class="body muted">Bring lineage into development, before the report is deployed.</p>
+      </div>
+      <div class="stack-sm">
+        <h3 class="h3">What it brings</h3>
+        <ul class="bullets tight">
+          <li>Analyze the local files you provide</li>
+          <li>Review model and visual dependencies</li>
+          <li>Explore results without a workspace scan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout callout-info"><div class="callout-bar">Scope</div><div class="callout-body">No workspace access or admin rights required. Legacy + PBIR. Results cover supplied files, not undiscovered published reports.</div></div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Local analysis for local development</span><span class="pageno"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="stack-sm">
+      <span class="eyebrow">Edition 3 of 5 · Unattended Execution</span>
+      <h2 class="h2">Service Principal: make scans repeatable</h2>
+      <hr class="accent-rule">
+    </div>
+    <div class="cols-2">
+      <div class="stack-sm">
+        <h3 class="h3">Why it has a place</h3>
+        <p class="body">An automation owner needs recurring scans without someone signing in interactively for every run.</p>
+        <p class="body muted">Move from an occasional investigation to a scheduled process.</p>
+      </div>
+      <div class="stack-sm">
+        <h3 class="h3">What it brings</h3>
+        <ul class="bullets tight">
+          <li>Service principal authentication</li>
+          <li>Scheduled jobs and CI/CD integration</li>
+          <li>Repeatable collection for governance reviews</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout callout-info"><div class="callout-bar">Setup matters</div><div class="callout-body">Configure authentication, tenant settings, and workspace permissions. Unattended execution does not bypass access controls.</div></div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Automation without an interactive login at run time</span><span class="pageno"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="stack-sm">
+      <span class="eyebrow">Edition 4 of 5 · Fabric Workflows</span>
+      <h2 class="h2">Semantic Link Labs: run it in Fabric</h2>
+      <hr class="accent-rule">
+    </div>
+    <div class="cols-2">
+      <div class="stack-sm">
+        <h3 class="h3">Why it has a place</h3>
+        <p class="body">A team already working in Fabric wants lineage collection in its cloud data workflow, with results in a lakehouse.</p>
+        <p class="body muted">Keep collection and orchestration in the Fabric environment.</p>
+      </div>
+      <div class="stack-sm">
+        <h3 class="h3">What it brings</h3>
+        <ul class="bullets tight">
+          <li>Semantic Link Labs-based collection</li>
+          <li>Lakehouse output for downstream analysis</li>
+          <li>Fabric pipeline integration</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout callout-info"><div class="callout-bar">Requirements</div><div class="callout-body">A Fabric environment and appropriate access.</div></div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · A Fabric-based route to the same lineage questions</span><span class="pageno"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="stack-sm">
+      <span class="eyebrow">Edition 5 of 5 · Administrative Oversight</span>
+      <h2 class="h2">Tenant Admin: company-wide visibility</h2>
+      <hr class="accent-rule">
+    </div>
+    <div class="cols-2">
+      <div class="stack-sm">
+        <h3 class="h3">Why it has a place</h3>
+        <p class="body">An administrator can review all workspaces, not just those they already have access to, along with permissions, access, and usage activity.</p>
+        <p class="body muted">Self-assign workspace roles to extend scans across the company, beyond previously assigned workspace access.</p>
+      </div>
+      <div class="stack-sm">
+        <h3 class="h3">What it brings</h3>
+        <ul class="bullets tight">
+          <li>1-Click capabilities plus admin metadata</li>
+          <li>Automatically pulls the latest code when run</li>
+          <li>User permissions and usage activity</li>
+          <li>Workspace access management</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout callout-info"><div class="callout-bar">Admin access</div><div class="callout-body">Requires appropriate Admin API access and permission to assign workspace roles. Self-assignment uses authorized admin capabilities.</div></div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Company-wide visibility through authorized workspace access</span><span class="pageno"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="stack-sm">
+      <span class="eyebrow">Different Collection Paths · Shared Core Output</span>
+      <h2 class="h2">Five editions. One familiar way to explore.</h2>
+      <hr class="accent-rule">
+    </div>
+    <p class="body">All five output a core model and report for exploring lineage in Power BI.</p>
+    <div class="cols-2">
+      <div class="stack-sm">
+        <h3 class="h3">The core model</h3>
+        <p class="body">Organizes collected metadata and dependencies so you can follow how model objects connect to reports, pages, and visuals.</p>
+      </div>
+      <div class="stack-sm">
+        <h3 class="h3">The Power BI report</h3>
+        <p class="body">Explore that lineage with familiar filters, selections, and visuals, rather than reading raw metadata files.</p>
+      </div>
+    </div>
+    <div class="callout callout-info"><div class="callout-bar">Same core experience</div><div class="callout-body">Collection, storage, and additional metadata vary by edition. The shared goal is explorable lineage in a format you already know.</div></div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Now let's explore the output</span><span class="pageno"></span></div>
+  </section>
+
+  <section class="slide divider">
+    <div class="stack-sm">
+      <span class="eyebrow">Impact IQ 1-Click · Live demo · 30 minutes</span>
+      <h2 class="h2">See the impact.<br>Explore what else is there.</h2>
+      <p class="body">Start with a model dependency, then explore the broader governance picture.</p>
+    </div>
+    <ol class="agenda-list">
+      <li><time datetime="PT5M">5 min</time><h3 class="h3" style="color:#fff">Choose the scope and explore the environment inventory</h3></li>
+      <li><time datetime="PT15M">15 min</time><h3 class="h3" style="color:#fff">Trace a measure to its reports, pages, and visuals</h3></li>
+      <li><time datetime="PT10M">10 min</time><h3 class="h3" style="color:#fff">Explore unused objects, report context, and backup outputs</h3></li>
+    </ol>
+    <div><a class="btn btn-accent" href="https://app.powerbi.com/view?r=eyJrIjoiNmMxYWQ2ZTItZDM4ZS00MGM1LTlhMDQtN2I1OTMwMzI0OTg2IiwidCI6ImUyY2Y4N2QyLTYxMjktNGExYS1iZTczLTEzOGQyY2Y5OGJlMiJ9" target="_blank" rel="noopener">▶ Open live demo</a></div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Visual-level lineage and broader governance in practice</span><span class="pageno"></span></div>
+  </section>
+
   <section class="slide divider">
     <div style="display:flex;align-items:center;gap:30px">
       <img class="iq-banner" width="300" height="169" src="impactiq-banner.png" alt="ImpactIQ — Impact Analysis &amp; Governance for Power BI + Fabric" style="flex:0 0 auto">
       <div class="stack-sm" style="max-width:600px">
         <span class="eyebrow">Get Started</span>
-        <h2 class="h2">Ready to transform your <span class="gradient">governance?</span></h2>
-        <p class="body">Open source · community driven · enterprise ready.</p>
+        <h2 class="h2">Choose your edition.<br><span class="gradient">Start exploring.</span></h2>
+        <p class="body">Free and open source. Start with one model or workspace.</p>
       </div>
     </div>
     <div class="cols-2" style="margin-top:20px;align-items:center">
@@ -735,15 +913,15 @@ body{ background:#080B12; }
           <div class="editions">
             <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ" target="_blank" rel="noopener">☁️ Impact IQ 1-Click</a>
             <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-Local" target="_blank" rel="noopener">💻 Local</a>
-            <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-TenantAdmin" target="_blank" rel="noopener">🛡️ Tenant Admin</a>
             <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-ServicePrincipal" target="_blank" rel="noopener">🔑 Service Principal</a>
             <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-SemanticLinkLabs" target="_blank" rel="noopener">🧪 Semantic Link Labs</a>
+            <a class="edition" href="https://github.com/BeSmarterWithData/ImpactIQ-TenantAdmin" target="_blank" rel="noopener">🛡️ Tenant Admin</a>
           </div>
         </div>
       </div>
       <div style="display:flex;justify-content:center">
         <div class="qr">
-          <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&amp;margin=0&amp;color=091F2C&amp;data=https%3A%2F%2Fgithub.com%2FBeSmarterWithData%2FImpactIQ" alt="QR code linking to the ImpactIQ GitHub repository" loading="lazy">
+          <img src="qrcode.png" alt="Impact IQ resource QR code" loading="lazy">
           <div class="cap">Scan to visit</div>
         </div>
       </div>
@@ -754,12 +932,16 @@ body{ background:#080B12; }
   <section class="slide divider">
     <div class="stack">
       <span class="eyebrow">Questions &amp; next steps · 10 minutes</span>
-      <h2 class="h1">What would you change<br>with complete impact visibility?</h2>
-      <p class="body">Start with one workspace. Trace one change.<br>Make visual-level lineage part of your release process.</p>
+      <h2 class="h1">What could you uncover<br>in your Power BI environment?</h2>
+      <p class="body">Trace dependencies. Explore the wider governance picture.<br>Choose the edition that fits your team.</p>
       <div class="author"><span><b>Chris Cusumano</b> · Senior Data Engineer | Microsoft</span></div>
       <div><a class="btn btn-accent" href="https://www.cloudandaisummit.com/content/sessiondetail/1172566" target="_blank" rel="noopener">Session details &amp; feedback</a></div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> The Cloud &amp; AI Summit 2026 · Impact IQ</span><span class="pageno"></span></div>
+  </section>
+
+  <section class="slide sponsors" aria-label="Thank you to our summit sponsors">
+    <img src="assets/summit-sponsors.png" alt="The Cloud &amp; AI Summit 2026 sponsors. Premium exhibitors: Anders, ArchitectNow, Microsoft. Exhibitors: 4sight, Covenant Technology Partners, MiTek, Oakwood, Silika, Strategy. Experience sponsor: Kepler.">
   </section>
 
 </div></div>
