@@ -254,6 +254,7 @@ body{ background:#080B12; }
 .theme-dark .panel-visual .panel-cap{ color:#505966; }
 .grid-2x2,.grid-3x2{ gap:18px; }
 .grid-2x2 .card{ justify-content:center; }
+.solutions-grid .card{ padding:22px; }
 .kpi{ box-shadow:none; }
 .kpi::before{ background:var(--brand-secondary); }
 .theme-dark .kpi{ box-shadow:none; }
@@ -398,6 +399,56 @@ body{ background:#080B12; }
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
 
+  <section class="slide">
+    <div class="stack-sm">
+      <span class="eyebrow">Adoption Grows</span>
+      <h2 class="h2">More teams. More models. More reports.</h2>
+      <hr class="accent-rule">
+    </div>
+    <div class="cols-2">
+      <div class="stack-sm">
+        <p class="body">The same one-model, one-report pattern repeats across the business.</p>
+        <ul class="bullets tight">
+          <li>Each team builds its own solution</li>
+          <li>Each report connects to its team's model</li>
+          <li>More models and reports to maintain</li>
+        </ul>
+        <p class="body muted">What happens when teams need to share data and business definitions?</p>
+      </div>
+      <div class="panel-visual">
+        <svg viewBox="0 0 560 310" role="img" aria-label="Four independent connections: Sales model to Sales report, Operations model to Operations report, Finance model to Finance report, and People model to People report.">
+          <defs><marker id="department-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0 0,8 4,0 8" fill="#49C5B1"/></marker></defs>
+          <g stroke="#49C5B1" stroke-width="3" marker-end="url(#department-arrow)">
+            <line x1="222" y1="41" x2="334" y2="41"/>
+            <line x1="222" y1="117" x2="334" y2="117"/>
+            <line x1="222" y1="193" x2="334" y2="193"/>
+            <line x1="222" y1="269" x2="334" y2="269"/>
+          </g>
+          <g fill="#0078D4">
+            <rect x="14" y="14" width="208" height="54" rx="8"/>
+            <rect x="14" y="90" width="208" height="54" rx="8"/>
+            <rect x="14" y="166" width="208" height="54" rx="8"/>
+            <rect x="14" y="242" width="208" height="54" rx="8"/>
+          </g>
+          <g fill="#318581">
+            <rect x="342" y="14" width="204" height="54" rx="8"/>
+            <rect x="342" y="90" width="204" height="54" rx="8"/>
+            <rect x="342" y="166" width="204" height="54" rx="8"/>
+            <rect x="342" y="242" width="204" height="54" rx="8"/>
+          </g>
+          <g text-anchor="middle" fill="#fff" font-size="19" font-weight="600" font-family="Segoe UI">
+            <text x="118" y="48">Sales model</text><text x="444" y="48">Sales report</text>
+            <text x="118" y="124">Operations model</text><text x="444" y="124">Operations report</text>
+            <text x="118" y="200">Finance model</text><text x="444" y="200">Finance report</text>
+            <text x="118" y="276">People model</text><text x="444" y="276">People report</text>
+          </g>
+        </svg>
+        <div class="panel-cap">Separate models, each serving its own report.</div>
+      </div>
+    </div>
+    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · The simple pattern grows across departments</span><span class="pageno"></span></div>
+  </section>
+
   <!-- ============ 4 · GOLDEN MODEL ============ -->
   <section class="slide">
     <div class="stack-sm">
@@ -416,31 +467,33 @@ body{ background:#080B12; }
         </ul>
       </div>
       <div class="panel-visual">
-        <svg viewBox="0 0 560 260" role="img" aria-label="A golden model shared across multiple workspaces">
-          <defs><marker id="a2" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0,8 3.5,0 7" fill="#8661C5"/></marker></defs>
-          <!-- workspaces -->
-          <g font-family="Segoe UI">
-            <rect x="360" y="14" width="180" height="66" rx="9" fill="#8661C5" opacity="0.10" stroke="#8661C5" stroke-dasharray="4 4"/>
-            <text x="450" y="34" text-anchor="middle" fill="#6b4ba8" font-size="12" font-weight="700">📁 Workspace A</text>
-            <rect x="374" y="44" width="70" height="26" rx="5" fill="#0078D4"/><text x="409" y="61" text-anchor="middle" fill="#fff" font-size="10">Report 1</text>
-            <rect x="456" y="44" width="70" height="26" rx="5" fill="#0078D4"/><text x="491" y="61" text-anchor="middle" fill="#fff" font-size="10">Report 2</text>
-            <rect x="360" y="97" width="180" height="66" rx="9" fill="#8661C5" opacity="0.10" stroke="#8661C5" stroke-dasharray="4 4"/>
-            <text x="450" y="117" text-anchor="middle" fill="#6b4ba8" font-size="12" font-weight="700">📁 Workspace B</text>
-            <rect x="374" y="127" width="70" height="26" rx="5" fill="#0078D4"/><text x="409" y="144" text-anchor="middle" fill="#fff" font-size="10">Report 3</text>
-            <rect x="456" y="127" width="70" height="26" rx="5" fill="#0078D4"/><text x="491" y="144" text-anchor="middle" fill="#fff" font-size="10">Report 4</text>
-            <rect x="360" y="180" width="180" height="66" rx="9" fill="#8661C5" opacity="0.10" stroke="#8661C5" stroke-dasharray="4 4"/>
-            <text x="450" y="200" text-anchor="middle" fill="#6b4ba8" font-size="12" font-weight="700">📁 Workspace C</text>
-            <rect x="374" y="210" width="70" height="26" rx="5" fill="#0078D4"/><text x="409" y="227" text-anchor="middle" fill="#fff" font-size="10">Report 5</text>
-            <rect x="456" y="210" width="70" height="26" rx="5" fill="#0078D4"/><text x="491" y="227" text-anchor="middle" fill="#fff" font-size="10">Report 6</text>
+        <svg viewBox="0 0 560 310" role="img" aria-label="One Golden Model connects to the Sales, Operations, Finance, and People reports.">
+          <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0 0,8 4,0 8" fill="#49C5B1"/></marker></defs>
+          <g stroke="#49C5B1" stroke-width="3" marker-end="url(#a2)">
+            <line x1="222" y1="155" x2="334" y2="41"/>
+            <line x1="222" y1="155" x2="334" y2="117"/>
+            <line x1="222" y1="155" x2="334" y2="193"/>
+            <line x1="222" y1="155" x2="334" y2="269"/>
           </g>
-          <line x1="180" y1="122" x2="360" y2="52" stroke="#8661C5" stroke-width="2.5" marker-end="url(#a2)"/>
-          <line x1="180" y1="130" x2="360" y2="130" stroke="#8661C5" stroke-width="2.5" marker-end="url(#a2)"/>
-          <line x1="180" y1="138" x2="360" y2="208" stroke="#8661C5" stroke-width="2.5" marker-end="url(#a2)"/>
-          <rect x="24" y="104" width="156" height="52" rx="12" fill="#FFB900"/>
-          <text x="102" y="128" text-anchor="middle" fill="#3a2f00" font-size="15" font-weight="700" font-family="Segoe UI">🏆 Golden Model</text>
-          <text x="102" y="146" text-anchor="middle" fill="#5c4b00" font-size="11">Shared everywhere</text>
+          <rect x="14" y="122" width="208" height="66" rx="8" fill="#FFB900"/>
+          <g text-anchor="middle" font-family="Segoe UI">
+            <text x="118" y="149" fill="#3a2f00" font-size="21" font-weight="700">Golden Model</text>
+            <text x="118" y="172" fill="#5c4b00" font-size="16">Shared semantic model</text>
+          </g>
+          <g fill="#318581">
+            <rect x="342" y="14" width="204" height="54" rx="8"/>
+            <rect x="342" y="90" width="204" height="54" rx="8"/>
+            <rect x="342" y="166" width="204" height="54" rx="8"/>
+            <rect x="342" y="242" width="204" height="54" rx="8"/>
+          </g>
+          <g text-anchor="middle" fill="#fff" font-size="19" font-weight="600" font-family="Segoe UI">
+            <text x="444" y="48">Sales report</text>
+            <text x="444" y="124">Operations report</text>
+            <text x="444" y="200">Finance report</text>
+            <text x="444" y="276">People report</text>
+          </g>
         </svg>
-        <div class="panel-cap">One model now powers reports across many workspaces.</div>
+        <div class="panel-cap">The same departmental reports now reuse one shared model.</div>
       </div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
@@ -517,35 +570,71 @@ body{ background:#080B12; }
           <li>Delete a used table → <b>multiple dependencies fail</b></li>
         </ul>
         <div class="callout callout-danger">
-          <div class="callout-bar">Reality</div>
-          <div class="callout-body">A change can break visuals or alter their meaning across workspaces. A chart that still renders can still tell the wrong story.</div>
+          <div class="callout-bar">As reuse grows</div>
+          <div class="callout-body">As adoption grows, you may not know how many reports connect to your model, who owns them, or which visuals depend on a field.</div>
         </div>
       </div>
       <div class="panel-visual">
-        <svg viewBox="0 0 440 250" role="img" aria-label="One change radiates into many broken reports">
+        <svg viewBox="0 -40 560 350" role="img" aria-label="Illustrative subset of a growing dependency network: renaming the Sales measure to Revenue affects visuals still referencing Sales in ten reports across Sales, Operations, Finance, and other teams, including the far-right Operations report. Two Operations reports and three People reports do not use this measure. More connected reports may exist.">
+          <text x="280" y="-12" text-anchor="middle" fill="#263442" font-family="Segoe UI" font-size="22" font-weight="700">Measure renamed: [Sales] → [Revenue]</text>
           <defs>
-            <marker id="a3" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0,8 3.5,0 7" fill="#C50F1F"/></marker>
+            <marker id="a3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0 0,8 4,0 8" fill="#C50F1F"/></marker>
+            <marker id="a3-neutral" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0 0,8 4,0 8" fill="#718096"/></marker>
+            <symbol id="affected-report" viewBox="0 0 86 28">
+              <rect width="86" height="28" rx="5" fill="#C50F1F"/>
+              <text x="43" y="19" text-anchor="middle" fill="#fff" font-size="15" font-weight="600" font-family="Segoe UI">! Report</text>
+            </symbol>
+            <symbol id="unaffected-report" viewBox="0 0 86 28">
+              <rect x="1" y="1" width="84" height="26" rx="5" fill="#E2E8ED" stroke="#718096"/>
+              <text x="43" y="19" text-anchor="middle" fill="#263442" font-size="15" font-weight="600" font-family="Segoe UI">Report</text>
+            </symbol>
           </defs>
-          <g stroke="#C50F1F" stroke-width="2" opacity="0.75">
-            <line x1="220" y1="125" x2="70" y2="42" marker-end="url(#a3)"/>
-            <line x1="220" y1="125" x2="370" y2="42" marker-end="url(#a3)"/>
-            <line x1="220" y1="125" x2="46" y2="125" marker-end="url(#a3)"/>
-            <line x1="220" y1="125" x2="394" y2="125" marker-end="url(#a3)"/>
-            <line x1="220" y1="125" x2="80" y2="208" marker-end="url(#a3)"/>
-            <line x1="220" y1="125" x2="360" y2="208" marker-end="url(#a3)"/>
+          <g stroke="#C50F1F" stroke-width="2.5" marker-end="url(#a3)">
+            <line x1="198" y1="141" x2="258" y2="39"/>
+            <line x1="198" y1="141" x2="258" y2="143"/>
+            <line x1="198" y1="141" x2="258" y2="247"/>
           </g>
-          <g font-family="Segoe UI">
-            <rect x="20" y="28" width="86" height="28" rx="6" fill="#C50F1F"/><text x="63" y="46" text-anchor="middle" fill="#fff" font-size="11">✕ Report</text>
-            <rect x="334" y="28" width="86" height="28" rx="6" fill="#C50F1F"/><text x="377" y="46" text-anchor="middle" fill="#fff" font-size="11">✕ Report</text>
-            <rect x="6" y="111" width="86" height="28" rx="6" fill="#C50F1F"/><text x="49" y="129" text-anchor="middle" fill="#fff" font-size="11">✕ Report</text>
-            <rect x="348" y="111" width="86" height="28" rx="6" fill="#C50F1F"/><text x="391" y="129" text-anchor="middle" fill="#fff" font-size="11">✕ Report</text>
-            <rect x="34" y="194" width="86" height="28" rx="6" fill="#C50F1F"/><text x="77" y="212" text-anchor="middle" fill="#fff" font-size="11">✕ Report</text>
-            <rect x="320" y="194" width="86" height="28" rx="6" fill="#C50F1F"/><text x="363" y="212" text-anchor="middle" fill="#fff" font-size="11">✕ Report</text>
+          <g stroke="#718096" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#a3-neutral)">
+            <line x1="198" y1="141" x2="258" y2="91"/>
+            <line x1="198" y1="141" x2="258" y2="195"/>
           </g>
-          <rect x="168" y="106" width="104" height="38" rx="10" fill="#FFB900"/>
-          <text x="220" y="130" text-anchor="middle" fill="#3a2f00" font-size="13" font-weight="700" font-family="Segoe UI">1 change</text>
+          <rect x="12" y="101" width="186" height="80" rx="8" fill="#FFB900" stroke="#C50F1F" stroke-width="2"/>
+          <g text-anchor="middle" font-family="Segoe UI" fill="#3a2f00">
+            <text x="105" y="134" font-size="21" font-weight="700">Golden Model</text>
+            <text x="105" y="158" font-size="16">Shared semantic model</text>
+          </g>
+          <g font-family="Segoe UI" font-size="16" font-weight="600" fill="currentColor">
+            <text x="268" y="18">Sales</text>
+            <text x="268" y="70">Operations</text>
+            <text x="268" y="122">Finance</text>
+            <text x="268" y="174">People</text>
+            <text x="268" y="226">Other teams...</text>
+          </g>
+          <g>
+            <use href="#affected-report" x="268" y="25" width="86" height="28"/>
+            <use href="#affected-report" x="364" y="25" width="86" height="28"/>
+            <use href="#affected-report" x="460" y="25" width="86" height="28"/>
+            <use href="#unaffected-report" x="268" y="77" width="86" height="28"/>
+            <use href="#unaffected-report" x="364" y="77" width="86" height="28"/>
+            <use href="#affected-report" x="460" y="77" width="86" height="28"/>
+            <use href="#affected-report" x="268" y="129" width="86" height="28"/>
+            <use href="#affected-report" x="364" y="129" width="86" height="28"/>
+            <use href="#affected-report" x="460" y="129" width="86" height="28"/>
+            <use href="#unaffected-report" x="268" y="181" width="86" height="28"/>
+            <use href="#unaffected-report" x="364" y="181" width="86" height="28"/>
+            <use href="#unaffected-report" x="460" y="181" width="86" height="28"/>
+            <use href="#affected-report" x="268" y="233" width="86" height="28"/>
+            <use href="#affected-report" x="364" y="233" width="86" height="28"/>
+            <use href="#affected-report" x="460" y="233" width="86" height="28"/>
+          </g>
+          <g font-family="Segoe UI" font-size="15" fill="currentColor">
+            <rect x="12" y="284" width="14" height="14" rx="2" fill="#C50F1F"/>
+            <text x="34" y="296">! Affected visuals still reference [Sales]</text>
+            <rect x="360" y="284" width="14" height="14" rx="2" fill="#E2E8ED" stroke="#718096"/>
+            <text x="382" y="296">Measure not used</text>
+          </g>
         </svg>
-        <div class="panel-cap">Illustrative impact: one shared object, many dependent reports.</div>
+        <div class="panel-cap">Illustrative subset: more reports may exist beyond the model owner's view.</div>
       </div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
@@ -584,15 +673,15 @@ body{ background:#080B12; }
   <section class="slide">
     <div class="stack-sm">
       <span class="eyebrow">The Gap</span>
-      <h2 class="h2">Existing tools fall short</h2>
+      <h2 class="h2">Existing solutions fall short</h2>
       <hr class="accent-rule">
-      <p class="body muted">Knowing which report connects to a model does not tell us which visuals use a particular field.</p>
+      <p class="body muted">Report connections alone do not reveal visual-level usage.</p>
     </div>
-    <div class="grid-2x2">
-      <div class="card"><span class="quad-label">Useful, but not enough</span><h3 class="h3">Catalogs &amp; inventories</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Finding an asset is different from finding every visual that uses a field.</p></div>
-      <div class="card"><span class="quad-label">Useful, but not enough</span><h3 class="h3">Report-level lineage</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">A model-to-report link does not identify the affected page or visual.</p></div>
+    <div class="grid-2x2 solutions-grid">
+      <div class="card"><span class="quad-label">Lineage does not extend to visuals</span><h3 class="h3">Purview</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Supports data governance and asset lineage, but does not show which report visuals use a measure or column.</p></div>
+      <div class="card"><span class="quad-label">Useful, but not enough</span><h3 class="h3">Power BI Service UI</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Item-level impact does not identify the visuals using a field.</p></div>
       <div class="card"><span class="quad-label">Difficult to repeat</span><h3 class="h3">Manual checks</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Opening reports one by one is slow, and indirect usage is easy to miss.</p></div>
-      <div class="card"><span class="quad-label">The missing connection</span><h3 class="h3">A visual-level usage map</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">Connect model objects to the visuals that consume them across workspaces.</p></div>
+      <div class="card"><span class="quad-label">Discovery is not usage</span><h3 class="h3">Cataloging</h3><p class="body" style="font-size:16px;color:var(--brand-muted)">An inventory of models, reports, and owners does not show which visuals use a particular field.</p></div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
@@ -689,21 +778,6 @@ body{ background:#080B12; }
       <div class="card"><h3 class="h3">Build shared understanding</h3><p class="body" style="font-size:19px">Use inventory, backups, and edition-specific access metadata to support governance and handovers.</p></div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Capabilities vary by edition and scan scope</span><span class="pageno"></span></div>
-  </section>
-
-  <section class="slide">
-    <div class="stack-sm">
-      <span class="eyebrow">Governance discussion · 15 minutes</span>
-      <h2 class="h2">Make lineage part of Dev/Test/Prod</h2>
-      <hr class="accent-rule">
-    </div>
-    <div class="cols-3">
-      <div class="stack-sm"><span class="eyebrow">01 · Development</span><h3 class="h3">Understand the change</h3><ul class="bullets tight"><li>Capture a metadata baseline</li><li>Trace measure and field usage</li><li>Identify downstream report owners</li></ul></div>
-      <div class="stack-sm"><span class="eyebrow">02 · Test</span><h3 class="h3">Validate the impact</h3><ul class="bullets tight"><li>Review affected pages and visuals</li><li>Confirm cross-workspace dependencies</li><li>Agree on acceptance checks</li></ul></div>
-      <div class="stack-sm"><span class="eyebrow">03 · Production</span><h3 class="h3">Release with evidence</h3><ul class="bullets tight"><li>Confirm backups and rollback steps</li><li>Coordinate changes with owners</li><li>Re-scan and verify after release</li></ul></div>
-    </div>
-    <div class="callout callout-info"><div class="callout-bar">Discuss</div><div class="callout-body">Who owns the impact review today, and what evidence would make your next model change safer?</div></div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · A practical governance workflow</span><span class="pageno"></span></div>
   </section>
 
   <section class="slide">
@@ -880,7 +954,7 @@ body{ background:#080B12; }
 
   <section class="slide divider">
     <div class="stack-sm">
-      <span class="eyebrow">Impact IQ 1-Click · Live demo · 30 minutes</span>
+      <span class="eyebrow">Impact IQ · Live demo · 30 minutes</span>
       <h2 class="h2">See the impact.<br>Explore what else is there.</h2>
       <p class="body">Start with a model dependency, then explore the broader governance picture.</p>
     </div>
