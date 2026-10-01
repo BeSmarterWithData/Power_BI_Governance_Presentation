@@ -183,6 +183,9 @@ ul.bullets.tight li{ font-size:19px; }
 .qr img{ width:150px; height:150px; display:block; border-radius:6px; }
 .qr .cap{ font:600 12px/1.45 var(--font-body); color:var(--brand-muted); margin-top:10px; }
 .qr .cap b{ color:var(--brand-ink); }
+.feedback-layout{ grid-template-columns:minmax(0,1fr) 280px; align-items:center; }
+.feedback-layout .qr img{ width:100%; height:auto; border-radius:0; }
+.feedback-layout .qr .cap{ font-size:18px; color:#263442; }
 
 .panel-visual{ background:var(--brand-surface); border:1px solid var(--brand-line); border-radius:var(--radius); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:22px; height:100%; }
 .panel-visual svg{ width:100%; height:auto; max-height:300px; }
@@ -746,25 +749,6 @@ body{ background:#080B12; }
     <div class="footer"><span class="brand-tag"><span class="dot"></span> ImpactIQ · Power BI + Fabric Governance</span><span class="pageno"></span></div>
   </section>
 
-  <!-- ============ 10 · HOW IT WORKS ============ -->
-  <section class="slide">
-    <div class="stack-sm">
-      <span class="eyebrow">Impact IQ 1-Click · How It Works</span>
-      <h2 class="h2">From scan to an explorable governance model</h2>
-      <hr class="accent-rule">
-    </div>
-    <p class="body">Select your scope. Collect metadata. Explore the results.</p>
-    <div class="timeline">
-      <div class="phase"><span class="step">Step 1</span><span class="name">Connect</span><span class="desc">Authenticate and collect metadata</span></div>
-      <div class="phase"><span class="step">Step 2</span><span class="name">Back up</span><span class="desc">Collect supported artifacts</span></div>
-      <div class="phase"><span class="step">Step 3</span><span class="name">Extract</span><span class="desc">Read model and report definitions</span></div>
-      <div class="phase"><span class="step">Step 4</span><span class="name">Analyze</span><span class="desc">Connect usage and dependencies</span></div>
-      <div class="phase active"><span class="step">Step 5</span><span class="name">Explore</span><span class="desc">Use the governance model</span></div>
-    </div>
-    <div class="callout callout-info"><div class="callout-bar">1-Click access</div><div class="callout-body">Workspace Member access; no computer admin rights. Coverage depends on scope, access, and supported content.</div></div>
-    <div class="footer"><span class="brand-tag"><span class="dot"></span> Impact IQ · Collection and analysis, not automatic report repair</span><span class="pageno"></span></div>
-  </section>
-
   <section class="slide">
     <div class="stack-sm">
       <span class="eyebrow">Put the Visibility to Work</span>
@@ -1004,12 +988,18 @@ body{ background:#080B12; }
   </section>
 
   <section class="slide divider">
-    <div class="stack">
-      <span class="eyebrow">Questions &amp; next steps · 10 minutes</span>
-      <h2 class="h1">What could you uncover<br>in your Power BI environment?</h2>
-      <p class="body">Trace dependencies. Explore the wider governance picture.<br>Choose the edition that fits your team.</p>
-      <div class="author"><span><b>Chris Cusumano</b> · Senior Data Engineer | Microsoft</span></div>
-      <div><a class="btn btn-accent" href="https://www.cloudandaisummit.com/content/sessiondetail/1172566" target="_blank" rel="noopener">Session details &amp; feedback</a></div>
+    <div class="cols-2 feedback-layout">
+      <div class="stack">
+        <span class="eyebrow">Questions &amp; next steps · 10 minutes</span>
+        <h2 class="h2">What could you uncover<br>in your Power BI environment?</h2>
+        <p class="body">Trace dependencies. Explore the wider governance picture.<br>Choose the edition that fits your team.</p>
+        <div class="author"><span><b>Chris Cusumano</b> · Senior Data Engineer | Microsoft</span></div>
+        <div><a class="btn btn-accent" href="https://www.cloudandaisummit.com/content/sessiondetail/1172566" target="_blank" rel="noopener">Session details &amp; feedback</a></div>
+      </div>
+      <div class="qr">
+        <img src="impactiqfeedback.png" width="246" height="246" alt="QR code for Impact IQ session feedback">
+        <div class="cap">Session feedback</div>
+      </div>
     </div>
     <div class="footer"><span class="brand-tag"><span class="dot"></span> The Cloud &amp; AI Summit 2026 · Impact IQ</span><span class="pageno"></span></div>
   </section>
